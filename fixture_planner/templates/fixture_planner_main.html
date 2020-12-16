@@ -1,0 +1,61 @@
+{% extends "index_home.html" %}
+
+{% block content %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/fixture_planner2.css' %}">
+<script type="text/javascript" src="{% static 'js/fixture_planner.js' %}"></script>
+<h2>
+    Fixture Difficult Rating
+</h2>
+
+<p>
+    FDR key: &nbsp
+    <span class="diff-introduction color-1">1</span>
+    <span class="diff-introduction color-2">2</span>
+    <span class="diff-introduction color-3">3</span>
+    <span class="diff-introduction color-4">4</span>
+    <span class="diff-introduction color-5">5</span>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th class="name-col"> Name</th>
+
+            <th class="stygg-hack">GW 0</th>
+            <!--th class="score-col"> FDR </th-->
+            {% for gw_number in gw_numbers %}
+                <th class="min-width"> GW {{ gw_number }} </th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+    {% for team_fixture_info in list %}
+      <tr>
+          {% for team in team_fixture_info %}
+             {% if forloop.counter == 1 %}
+                <td class="name-col">
+                    {{ team.team_name }}
+                </td>
+             {% endif %}
+            {% if forloop.counter == 1 %}
+                <td class="stygg-hack">
+                    {{ team.team_name }}
+                </td>
+             {% endif %}
+            <!--{% if forloop.counter == 1 %}
+                <td class="score-col">
+                    {{ team.difficulty_score }}
+                </td>
+             {% endif %}-->
+        <script>
+            document.write("<td scope='col'class=' min-width fpl-box color-{{team.difficulty_score}}'>");
+        </script>
+            {{  team.opponent_team_name }}&nbsp({{  team.H_A  }})
+        </td>
+            {% endfor %}
+      </tr>
+     {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

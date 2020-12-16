@@ -1,0 +1,142 @@
+
+body {
+  background: #EEE;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.diff-introduction {
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+
+
+
+/* Table */
+
+.site {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 30px 30px;
+    overflow: scroll;
+    height: 100px;
+    width: 80%;
+}
+
+
+table {
+  height: 40%;
+  left: 40%;
+  /* top right bottom left */
+  margin: 20px 30px 30px 50px;
+  overflow-y: scroll;
+  position: static;
+  /* border: 1px solid black; */
+  /*table-layout: fixed; combined with widht=80% then complete table will be 80% of the page*/
+   /*justify-content: flex; */
+}
+
+
+
+tbody td.color-1, span.diff-introduction.color-1 {
+   background-color: rgb(55, 85, 35);
+   color: white;
+}
+
+tbody td.color-2, span.diff-introduction.color-2 {
+   background-color: rgb(1, 252, 122);
+}
+
+tbody td.color-3, span.diff-introduction.color-3 {
+   background-color: silver;
+}
+
+tbody td.color-4, span.diff-introduction.color-4 {
+   background-color: rgb(255, 23, 81);
+   color: white;
+}
+
+tbody td.color-5, span.diff-introduction.color-5 {
+   background-color: rgb(128, 7, 45);
+   color: white;
+}
+
+thead th {
+  background: #88CCF1;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+}
+
+thead th.first-element-left-align {
+    text-align: left;
+}
+
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* top right bottom left */
+  padding: 20px 25px 20px 25px;
+  margin: 25px;
+  font-size: 18px;
+  text-align: center;
+  border-top: 5px solid #FFF;
+  border-bottom: 5px solid #FFF;
+  border-left: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+}
+
+
+
+.name-col {
+    width: 110px;
+    background-color: white;
+    text-align: left;
+    font-size: 17px;
+    padding: 0px;
+}
+
+th.name-col {
+    background-color: #88CCF1;
+    border-left: 9.5px solid #88CCF1;
+
+}
+
+
+table tbody
+{
+   overflow: auto;
+   height: 100px;
+}
+
+
+
+
+
+
+

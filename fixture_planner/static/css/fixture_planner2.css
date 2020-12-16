@@ -1,0 +1,134 @@
+
+body {
+  background: #EEE;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.diff-introduction {
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+
+/* Table */
+
+tbody td.color-1, span.diff-introduction.color-1 {
+   background-color: rgb(55, 85, 35);
+   color: white;
+}
+
+tbody td.color-2, span.diff-introduction.color-2 {
+   background-color: rgb(1, 252, 122);
+}
+
+tbody td.color-3, span.diff-introduction.color-3 {
+   background-color: silver;
+}
+
+tbody td.color-4, span.diff-introduction.color-4 {
+   background-color: rgb(255, 23, 81);
+   color: white;
+}
+
+tbody td.color-5, span.diff-introduction.color-5 {
+   background-color: rgb(128, 7, 45);
+   color: white;
+}
+
+.name-col {
+    background-color: #f4f7f8;
+    text-align: left;
+    min-width: 120px;
+    position: absolute;
+    margin-left: -2px;
+    margin-right: 2px;
+}
+
+.score-col {
+    font-weight: bold;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    margin-left: -43px;
+    background-color: #f4f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left-border: 3px;
+    border-color: white;
+}
+
+th.score-col {
+    align-items: flex-start;
+}
+
+
+
+table {
+    margin: 15px auto auto auto;
+    width: 80%;
+    background-color: white;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+thead th {
+    background: #88CCF1;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 5px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* top right bottom left */
+}
+
+.min-width {
+  min-width: 90px;
+}
+
+th, td {
+  height: 50px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-left: 0.5px solid #FFF;
+  border-right: 0.5px solid #FFF;
+}
+
+.stygg-hack {
+    min-width: 120px;
+    color: white;
+    background-color: white;
+}

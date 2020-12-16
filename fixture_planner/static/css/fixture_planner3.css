@@ -1,0 +1,92 @@
+
+body {
+  background: #EEE;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.diff-introduction {
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+
+tbody td.color-1, span.diff-introduction.color-1 {
+   background-color: rgb(55, 85, 35);
+   color: white;
+}
+
+tbody td.color-2, span.diff-introduction.color-2 {
+   background-color: rgb(1, 252, 122);
+}
+
+tbody td.color-3, span.diff-introduction.color-3 {
+   background-color: silver;
+}
+
+tbody td.color-4, span.diff-introduction.color-4 {
+   background-color: rgb(255, 23, 81);
+   color: white;
+}
+
+tbody td.color-5, span.diff-introduction.color-5 {
+   background-color: rgb(128, 7, 45);
+   color: white;
+}
+
+table {
+    margin: 15px auto auto auto;
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.name-col {
+    background-color: #f4f7f8;
+    text-align: left;
+    min-width: 120px;
+    position: absolute;
+    margin-left: -2px;
+    margin-right: 2px;
+}
+
+td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* top right bottom left */
+  }
+
+.text-center {
+    text-align: center;
+}
+
+.min-width {
+  min-width: 90px;
+}
+
+th, td {
+  height: 50px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-left: 0.5px solid #FFF;
+  border-right: 0.5px solid #FFF;
+}

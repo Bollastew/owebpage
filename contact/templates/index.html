@@ -1,0 +1,19 @@
+{% extends "index_home.html" %}
+
+{% block content %}
+  <h2>Contact Page</h2>
+  <p>Welcome to the contact page. This fpl page ... </p>
+  {% load static %}
+  <ul>
+      <li><strong>Owner Name:</strong> {{ owner_name }}</li>
+      <li><strong>Twitter Page:</strong> <a href="{{ owner_twitter }}"> {{ owner_twitter }} </a> </li>
+      <li><strong>About me:</strong> {{ owner_description }}</li>
+      <div class="col-sm-12" >
+          <div class="row">
+            <div class="col-md-1">
+                {{ owners_names }}
+            </div>
+        </div>
+      </div>
+  </ul>
+{% endblock %}
